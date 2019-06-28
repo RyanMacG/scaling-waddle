@@ -90,3 +90,9 @@ augroup END
 " Ale
 let g:ale_fixers = { '*': ['remove_trailing_lines', 'trim_whitespace'] }
 let g:ale_fix_on_save = 1
+
+" Junkfile
+" {{{
+  nnoremap <leader>jo :JunkfileOpen<CR>
+  let g:junkfile#directory = $HOME . '/.config/.nvim/cache/junkfile'
+" }}}
