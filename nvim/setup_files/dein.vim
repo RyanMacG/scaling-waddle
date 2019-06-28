@@ -65,6 +65,7 @@ if dein#load_state(g:dein_plugin_dir)
   call dein#add('editorconfig/editorconfig-vim')
   call dein#add('tpope/vim-sleuth')
   call dein#add('kristijanhusak/vim-carbon-now-sh')
+  call dein#add('Shougo/junkfile.vim')
 
   " Windows/panes/movement
   call dein#add('christoomey/vim-tmux-navigator')
