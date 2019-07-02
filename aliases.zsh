@@ -45,8 +45,8 @@ TRAPHUP() {
 alias vim="nvim"
 alias v="vim"
 
-alias ae='v $dotfiles/zsh/aliases.zsh' #alias edit
-alias ar='source $dotfiles/zsh/aliases.zsh'  #alias reload
+alias ae='v $dotfiles/zsh.before/aliases.zsh' #alias edit
+alias ar='source $dotfiles/zsh.before/aliases.zsh'  #alias reload
 alias gar="killall -HUP -u \"$USER\" zsh"  #global alias reload
 
 
@@ -193,6 +193,7 @@ alias spb="git checkout -b \`sp | tail -2 | grep '#' | sed 's/^ //' | sed 's/[^A
 
 alias hcl='hub clone'
 alias hpr='hub pull-request'
+alias lpr='lab mr create'
 alias grb='git recent-branches'
 
 # Finder
@@ -206,5 +207,4 @@ alias dbmd='spring rake db:migrate:down'
 alias dbmu='spring rake db:migrate:up'
 
 # Homebrew
-alias brewu='brew update  && brew upgrade && brew cleanup && brew prune && brew doctor'
-
+alias brewu='brew update && brew upgrade && brew cleanup && brew doctor'
